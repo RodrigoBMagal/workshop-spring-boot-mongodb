@@ -23,13 +23,14 @@ public class Post implements Serializable {
     public Post() {
     }
 
-    public Post(String body, Date date, String id, String title, AuthorDTO author) {
-        this.body = body;
-        this.date = date;
-        this.id = id;
-        this.title = title;
-        this.author = author;
-    }
+    public Post(String id, Date date, String title, String body, AuthorDTO author) {
+		super();
+		this.id = id;
+		this.date = date;
+		this.title = title;
+		this.body = body;
+		this.author = author;
+	}
 
     public String getId() {
         return id;
